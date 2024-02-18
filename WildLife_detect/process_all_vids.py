@@ -1,4 +1,4 @@
-from detect_vid import *
+from utils.detect_vid import *
 import cv2
 import os
 
@@ -35,7 +35,8 @@ with open(out_txt_name,'a') as txt:
         save_frame, save_info = quick_detect_vid(
             video_path=vid_file, 
             isShow=False,
-            break_early=True)
+            break_early=False,
+            save_to_mp4=False)
 
         if verbose:
             print(f'File name: {vid_file}')
