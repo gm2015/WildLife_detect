@@ -1,0 +1,49 @@
+1. Install Python
+https://www.python.org/downloads/release/python-3121/
+
+Add PATH to the environment:
+C:\Users\duong\AppData\Local\Programs\Python\Python312\
+C:\Users\duong\AppData\Local\Programs\Python\Python312\Scripts\
+
+Check: 
+>> python --version
+
+2. Upgrade pip. Run command in cmd:
+python -m pip install --upgrade pip
+
+3. GPU - Gegoce RTX 3090, download and install CUDA
+https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_local
+
+Check:
+>> nvcc --version
+
+4. Download and install PyTorch
+https://pytorch.org/get-started/locally/ --> to choose the right config
+Stable 2.2.0
+Window
+Pip
+Python
+CUDA11.8
+
+Run command in cmd:
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+Check: 
+>> python
+>> import torch
+
+
+5. Install the ultralytics package from PyPI. Run command:
+pip install ultralytics
+
+Or Install the ultralytics package from GitHub. 
+(Need to download and install Git 64-bit Window: https://git-scm.com/download/win)
+Run command: 
+pip install git+https://github.com/ultralytics/ultralytics.git@main
+pip install git+https://github.com/facebookresearch/segment-anything.git
+
+Check:
+>> yolo settings
+
+6. Run in CLI or within Python
+https://docs.ultralytics.com/quickstart/
